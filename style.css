@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+
+/*These are the some resets for the website*/
+/*Resets*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*these are the global variables which declare one time and use it anywhere*/
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577598;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', 'sans-sarif';
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', 'sans-sarif';
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    /*text decoration underline bydefault mila hota hai to hum none kar denge*/
+    display: inline-block;
+    /*displai already inline hota hai to hum use block kar denge*/
+}
+
+ul {
+    list-style: none;
+    /*To remove dot in all nav element names*/
+}
+
+
+/* Utility classes*/
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    /*margin left and right both at a time given by using margin-inline*/
+    padding-inline: var(--padding-inline-section);
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+/* top Banner */
+
+.top-banner {
+    background-image: url('./assets/asset\ 30.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+    /*to repeat the image in deep*/
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    /*topBottom leftRight*/
+    text-align: center;
+}
+
+/* nav banner */
+.main-nav {
+    justify-content: space-between;
+}
+
+.company-log img {
+    margin-top: 20PX;
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+}
+.nav-links ul {
+    justify-content: end;
+    gap:40px;
+}
